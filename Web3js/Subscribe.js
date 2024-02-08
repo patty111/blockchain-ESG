@@ -34,7 +34,7 @@ async function subscribeToNewPendingTransactions() {
         console.log('New Pending Transaction: ' + transaction);
     });
     subscription.on('error', error =>
-        console.log('Error when subscribing to New block header: ', error),
+        console.log('Error when subscribing to New block header: ', error)
     );
 }
 
