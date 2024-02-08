@@ -2,3 +2,4 @@ node_modules
 git-filter-repo
 .env
 pending-tx.json
+abi.*
