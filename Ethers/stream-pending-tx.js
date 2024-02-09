@@ -5,9 +5,10 @@ const fs = require('fs');
 const INFURA_WSS_URL = process.env.INFURA_WSS_URL;
 const INFURA_HTTP_URL = process.env.INFURA_HTTP_URL;
 // const provider = new ethers.JsonRpcProvider(INFURA_HTTP_URL);
+const provider = new ethers.WebSocketProvider(INFURA_WSS_URL);
 
 async function subscribePendingTx() {
-    const provider = new ethers.WebSocketProvider(INFURA_WSS_URL);
+    // const provider = new ethers.WebSocketProvider(INFURA_WSS_URL);
 
     provider.on('pending', (tx) => {
         // console.log(tx);
