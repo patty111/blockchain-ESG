@@ -19,7 +19,6 @@ async function getInfo() {
     contract.on("Transfer", (from, to, value, data) => {
         console.log("Transfer event: ", from, to, formatEther(value), '\n', data.emitter);
     });
-    
 }
 
 getInfo();
