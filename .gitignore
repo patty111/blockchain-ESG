@@ -5,3 +5,4 @@ pending-tx.json
 *abi.*
 env
 lib/
+.DS_Store
